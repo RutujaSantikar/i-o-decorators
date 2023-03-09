@@ -1,0 +1,22 @@
+<p>parent1 works!</p>
+
+
+<!-- <button mat-button
+(click)="openDialog()">
+Launch dialog</button><br><br> -->
+
+<button (click)="onClick()">Show Child</button>
+
+<!-- <app-child-dialog [header1]="header" [message1]="message"  [button1]="button"></app-child-dialog> -->
+<!-- <app-child-dialog [props]="myProps"></app-child-dialog> -->
+<!-- <app-child-dialog [props2]="propsArray"></app-child-dialog> -->
+<!-- <app-child-dialog [message1]="message"></app-child-dialog>
+<app-child-dialog [button1]="button"></app-child-dialog> -->
+
+
+<app-child-dialog *ngIf="showChild" [props3]="myHeader" ></app-child-dialog>
+
+
+
+
+

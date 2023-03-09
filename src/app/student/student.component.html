@@ -1,0 +1,18 @@
+<div style="text-align: center; padding-top: 20px; background-color:lightgray;">
+
+<h1>child component</h1>
+price:<input type="text" #price
+ (keyup)="onChange(price.value)">
+ <br><br>
+<button (click)="sendValues()">
+  Send Data </button>
+<br>
+<br>
+
+<button (click)="valueChanged()">
+Increment Count</button><br><br>
+
+ <p>received data from
+ parent:{{parentData}}</p>
+
+ </div>
