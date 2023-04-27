@@ -1,28 +1,24 @@
+<router-outlet> </router-outlet>
 
-
-
-
-
-  <router-outlet>
-    
-  </router-outlet>
-
-<div style=" text-align:center; padding-bottom: 20px; background-color: lightblue;">
-
-<h1>Welcome to {{title1}}</h1>
-<h2>Parent Component </h2>
-<h4>Current Price : {{price}}</h4>
-pass data:<input type="text" [(ngModel)]="enterName">
-<button (click)="passtochild()">pass to child</button>
-<p>Value increment in parent:{{parentCount}}</p>
+<div
+  style="text-align: center; padding-bottom: 20px; background-color: lightblue"
+>
+  <h1>Welcome to {{ title1 }}</h1>
+  <h2>Parent Component</h2>
+  <h4>Current Price : {{ price }}</h4>
+  pass data:<input type="text" [(ngModel)]="enterName" />
+  <button (click)="passtochild()">pass to child</button>
+  <p>
+    Value increment in parent:<span
+      ><h2>{{ parentCount }}</h2></span
+    >
+  </p>
 </div>
 <app-student
-
-[myinputMsg]="myInputMessage"
-(myOutputMsg) ="GetChildData($event)"
-(newPrice)="onChange($event)"
-(valueChange)="displayCounter($event)"
-[parentData]="parentData">
-
+  [myinputMsg]="myInputMessage"
+  (myOutputMsg)="GetChildData($event)"
+  (newPrice)="onChange($event)"
+  (valueChange)="displayCounter($event)"
+  [parentData]="parentData"
+>
 </app-student>
-
